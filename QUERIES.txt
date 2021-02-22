@@ -22,3 +22,8 @@ OPERATOR USED WITH WHERE CLAUSE
 /*select * from bookings where total_amount > 200000*/
 /*select * from bookings where total_amount <= 37900*/
 select * from bookings where total_amount < 37900
+==================================
+WHERE CLAUSE+AND , WHERE CLAUSE+OR
+==================================
+/*select * from seats where aircraft_code = '319' AND fare_conditions = 'Business'*/
+select * from seats where aircraft_code = '319' or seat_no = '2A'
