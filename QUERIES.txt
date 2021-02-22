@@ -1,0 +1,2 @@
+SELECT * FROM aircrafts
+select aircraft_code from aircrafts
