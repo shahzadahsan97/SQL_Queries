@@ -9,3 +9,9 @@ REMOVE DEPLICATE VALUE -> "DISTNICT"
 /*select distinct * from tickets*/
 /*select * from flights*/
 select distinct departure_airport , arrival_airport , status from flights
+==============
+WHERE CALUSE
+==============
+/*select airport_code , airport_name , city from airports where city ->> 'en' = 'Surgut'*/
+/*select * from aircrafts where aircraft_code = '773'*/
+select * from airports where timezone = 'Asia/Yakutsk'
