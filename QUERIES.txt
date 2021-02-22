@@ -1,2 +1,11 @@
+===================
+SELECT STATMENTS
+===================
 SELECT * FROM aircrafts
 select aircraft_code from aircrafts
+======================================
+REMOVE DEPLICATE VALUE -> "DISTNICT"
+======================================
+/*select distinct * from tickets*/
+/*select * from flights*/
+select distinct departure_airport , arrival_airport , status from flights
