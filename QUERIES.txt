@@ -15,3 +15,10 @@ WHERE CALUSE
 /*select airport_code , airport_name , city from airports where city ->> 'en' = 'Surgut'*/
 /*select * from aircrafts where aircraft_code = '773'*/
 select * from airports where timezone = 'Asia/Yakutsk'
+===================================
+OPERATOR USED WITH WHERE CLAUSE
+===================================
+/*select * from airports where timezone != 'Asia/Yakutsk'*/
+/*select * from bookings where total_amount > 200000*/
+/*select * from bookings where total_amount <= 37900*/
+select * from bookings where total_amount < 37900
