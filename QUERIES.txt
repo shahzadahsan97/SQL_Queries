@@ -47,3 +47,9 @@ FETCH AND LIMIT (USING OFFSET - SKIP THE ROWS)
 ===============================================
 /*select * from boarding_passes fetch first 10 row only*/
 select * from boarding_passes offset 10 rows fetch first 10 row only
+==================================
+WHERE CLAUSE + BETWEEN , IN & AS
+==================================
+/*select * from aircrafts where range in (5700 , 4200 , 6700)*/
+select * from bookings where book_date in ('2017-07-05%' ,'2017-08-10%' , '2017-07-18%' )
+select b.book_date as dateofbooking , b.total_amount as tm from bookings as b where book_date in ('2017-07-05%' ,'2017-08-10%' , '2017-07-18%' )
