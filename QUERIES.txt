@@ -27,3 +27,9 @@ WHERE CLAUSE+AND , WHERE CLAUSE+OR
 ==================================
 /*select * from seats where aircraft_code = '319' AND fare_conditions = 'Business'*/
 select * from seats where aircraft_code = '319' or seat_no = '2A'
+====================================
+WHERE CLAUSE + LIKE + NOT LIKE AND _
+====================================
+SELECT * from aircrafts where model ->> 'en' like '%200%'
+/*SELECT * from aircrafts where model ->> 'en' not like 'Airbus%' and model ->> 'en' not like 'Boeing%'*/
+/*SELECT * from aircrafts where model ->> 'en' not like '_Airbus%' and model ->> 'en' not like '_Boeing%'*/
