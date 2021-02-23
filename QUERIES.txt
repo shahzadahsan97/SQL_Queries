@@ -33,3 +33,12 @@ WHERE CLAUSE + LIKE + NOT LIKE AND _
 SELECT * from aircrafts where model ->> 'en' like '%200%'
 /*SELECT * from aircrafts where model ->> 'en' not like 'Airbus%' and model ->> 'en' not like 'Boeing%'*/
 /*SELECT * from aircrafts where model ->> 'en' not like '_Airbus%' and model ->> 'en' not like '_Boeing%'*/
+/*select passenger_name from tickets where passenger_name like '__IN%'*/
+/*select passenger_name from tickets where passenger_name like '%ALINA%'*/
+====================
+LIMIT AND ORDER BY
+===================
+/*select flight_id , fare_conditions from ticket_flights where flight_id >= 30625 and fare_conditions = 'Business' limit 10*/ 
+/*select passenger_name , contact_data from tickets order by passenger_name limit 10*/
+/*select passenger_name , contact_data from tickets order by passenger_name desc limit 10*/
+/*select passenger_name , contact_data from tickets where passenger_name = 'ZULFIYA ZAKHAROVA' order by passenger_name desc limit 10*/
