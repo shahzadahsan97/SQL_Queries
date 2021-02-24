@@ -58,3 +58,8 @@ NOT IN
 ========
 select * from aircrafts where aircraft_code not in ('321' , '786' , '319')
 select * from flights where status not in ('Schedule' , 'Delayed' , 'Cancelled')
+=======================
+ISNULL AND IS NOT NULL
+=======================
+/*select * from flights where actual_departure isnull and actual_arrival isnull*/
+select * from flights where actual_departure is not null and actual_arrival is not null
