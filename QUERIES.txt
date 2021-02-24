@@ -77,3 +77,25 @@ select  * from airports where timezone in ('Asia/Novokuznetsk' , 'Asia/Krasnoyar
 select * from aircrafts where range between 3000 and 6000 order by range
 select model , range , round(range/1.609,2) from aircrafts order by round
 select * , round(range/1.690 , 2) as rangeInMiles from aircrafts where aircraft_code = 'SU9'
+
+=========================================
+count(), create table , insert into table
+=========================================
+create table school(
+id serial primary key,
+name text not null,
+subject text not null,
+age text 
+)
+
+insert into school(name , subject , age)
+values ('saif' , 'Maths' , 34),
+		('Neha' , 'English' , 22),
+		('Huma' , 'Science' , 31),
+		('Bilal' , 'Urdu' , 33),
+		('Hiba' , 'Pak Studies' , null);
+
+select * from schools
+select count(age) from schools
+select count(passenger_name) from tickets
+select count(distinct passenger_name) from tickets
