@@ -99,3 +99,11 @@ select * from schools
 select count(age) from schools
 select count(passenger_name) from tickets
 select count(distinct passenger_name) from tickets
+
+=============================
+sum() , min() , max() , avg()
+=============================
+select sum(total_amount) from bookings
+select avg(total_amount) from bookings
+select max(total_amount) from bookings
+select min(total_amount) from bookings
