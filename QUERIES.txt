@@ -107,3 +107,17 @@ select sum(total_amount) from bookings
 select avg(total_amount) from bookings
 select max(total_amount) from bookings
 select min(total_amount) from bookings
+========
+Test 2
+=======
+1. Calculate the Average tickets Sales?
+2. Return the number of seats in the air craft that has aircraft code = 'CN1' ?
+4. Write a query to return the aircraft_code and the number of seats of each air craft ordered ascending?
+5. calculate the number of seats in the salons for all aircraft models, but now taking into account the class of service Business class and Economic class.
+
+Answer:
+
+select avg(total_amount) from bookings
+select count(*) from seats where aircraft_code = 'CN1'
+select aircraft_code , count(*) from seats group by aircraft_code order by count
+select aircraft_code , fare_conditions , count(*) from seats group by aircraft_code , fare_conditions order by aircraft_code , fare_conditions
