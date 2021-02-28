@@ -107,6 +107,11 @@ select sum(total_amount) from bookings
 select avg(total_amount) from bookings
 select max(total_amount) from bookings
 select min(total_amount) from bookings
+====================
+GROUP BY and HAVING
+====================
+select city , count(*) from airports group by city
+select city , count(*) from airports group by city having count(*) > 1
 ========
 Test 2
 =======
