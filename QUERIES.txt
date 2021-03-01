@@ -126,3 +126,11 @@ select avg(total_amount) from bookings
 select count(*) from seats where aircraft_code = 'CN1'
 select aircraft_code , count(*) from seats group by aircraft_code order by count
 select aircraft_code , fare_conditions , count(*) from seats group by aircraft_code , fare_conditions order by aircraft_code , fare_conditions
+======
+CASE
+=====
+select *, 
+case when age>= 25 then 'old'
+	when age isnull then 'unknown'
+	else 'young' end is_old 
+from school
