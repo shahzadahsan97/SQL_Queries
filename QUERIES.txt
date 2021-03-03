@@ -134,3 +134,10 @@ case when age>= 25 then 'old'
 	when age isnull then 'unknown'
 	else 'young' end is_old 
 from school
+-----------
+select DATE_PART('month' , book_date) as month , sum(total_amount), 
+case when sum(total_amount) > 6958118400.00 then 'the most'
+	when sum(total_amount) < 6958118400.00 then 'the least'
+	else 'the medium' end booking_qt
+from bookings
+group by month
