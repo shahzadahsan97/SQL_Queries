@@ -146,4 +146,5 @@ group by month
 ========
 NULLIF
 ========
-select count(nullif(actual_departure,null)) as count1 , count(nullif(actual_arrival,null)) as count2 from flights
+-select count(nullif(actual_departure,null)) as count1 , count(nullif(actual_arrival,null)) as count2 from flights
+-select count(*) - count(nullif(actual_departure,null)) as non_count_1 , count(*) - count(nullif(actual_arrival,null)) as non_count_2 from flights
