@@ -141,3 +141,9 @@ case when sum(total_amount) > 6958118400.00 then 'the most'
 	else 'the medium' end booking_qt
 from bookings
 group by month
+
+
+========
+NULLIF
+========
+select count(nullif(actual_departure,null)) as count1 , count(nullif(actual_arrival,null)) as count2 from flights
