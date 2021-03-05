@@ -153,3 +153,4 @@ NULLIF
 COALESCE
 ===========
 -select status , coalesce(actual_departure) , coalesce(actual_arrival) from flights
+-select status , coalesce(actual_departure , current_timestamp) , coalesce(actual_arrival,current_timestamp) from flights
