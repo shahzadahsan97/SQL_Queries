@@ -155,3 +155,16 @@ COALESCE
 -select status , coalesce(actual_departure) , coalesce(actual_arrival) from flights
 -select status , coalesce(actual_departure , current_timestamp) , coalesce(actual_arrival,current_timestamp) from flights
 -select status , coalesce(actual_departure , current_timestamp) , coalesce(actual_arrival,current_timestamp) from flights where actual_departure = NULL or actual_arrival = null
+
+========
+TEST
+=======
+Question: write a query to arrange the range of model of air crafts so  Short range is less than 2000, Middle range is more than 2000 
+and less than 5000 & any range above 5000 is long range?
+
+Answer:
+- select aircraft_code, range,
+case when range<= 2000 then 'Short_Range'
+	when range>2000 and range<5000 then 'Middle_Range'
+	else 'Long_Range' end Ranges
+from aircrafts order by range
