@@ -168,3 +168,8 @@ case when range<= 2000 then 'Short_Range'
 	when range>2000 and range<5000 then 'Middle_Range'
 	else 'Long_Range' end Ranges
 from aircrafts order by range
+
+====================
+TIMESTAMP EXTRACT
+====================
+-select extract ('day' from book_date)as day , sum(total_amount)as sales from bookings group by 1 order by day
