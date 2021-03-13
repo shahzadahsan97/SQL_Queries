@@ -173,3 +173,4 @@ from aircrafts order by range
 TIMESTAMP EXTRACT
 ====================
 -select extract ('day' from book_date)as day , sum(total_amount)as sales from bookings group by 1 order by day
+-select extract('month' from book_date) as month , extract('day' from book_date) as day,  sum(total_amount) as sales from bookings group by 1,2 order by day
