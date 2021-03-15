@@ -179,3 +179,4 @@ DATE_TRUNC() & DATE_PART()
 ==========================
 -select book_date , count(*)  from bookings group by book_date
 -select date_trunc('day' , book_date) as day , count(total_amount) as total_bookings from bookings group by day
+-select date_trunc('day' , book_date) as day ,date_trunc('month' , book_date) as month, count(total_amount) as total_bookings from bookings group by day , month
