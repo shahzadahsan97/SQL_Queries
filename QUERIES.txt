@@ -180,3 +180,5 @@ DATE_TRUNC() & DATE_PART()
 -select book_date , count(*)  from bookings group by book_date
 -select date_trunc('day' , book_date) as day , count(total_amount) as total_bookings from bookings group by day
 -select date_trunc('day' , book_date) as day ,date_trunc('month' , book_date) as month, count(total_amount) as total_bookings from bookings group by day , month
+-select date_part('day' , book_date) as day , date_part('month' , book_date) as month , sum(total_amount)as total_bookings from bookings group by day , month
+having date_part('day' , book_date) = 21 and date_part('month' , book_date) = 6
