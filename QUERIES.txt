@@ -186,3 +186,7 @@ having date_part('day' , book_date) = 21 and date_part('month' , book_date) = 6
 
 -select date_part('dow',book_date) as day , date_part('month',book_date) as month , sum(total_amount) as total_bookings from bookings group by day , month having date_part('month',book_date) = 7
 -select date_part('month',book_date) as month , sum(total_amount) as total_bookings from bookings group by 1
+
+=============
+CURRENT DATE
+=============
