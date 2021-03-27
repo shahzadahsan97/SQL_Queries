@@ -193,3 +193,9 @@ CURRENT DATE
 - select book_ref , book_date from bookings where book_date = '13-08-2017'::DATE
 - select public.now()  #extract last data from database
 -select date_trunc('day' , book_date) as day_trunc , date_part('day' ,book_date) as day_part,extract('day' from book_date) as ext_day ,current_date from bookings
+
+================
+INNER JOINS
+================
+- select s.seat_no , s.fare_condition , model --> 'en' as model from seat s join aircrafts a on s.aircraft_code = a.aircraft_code
+
